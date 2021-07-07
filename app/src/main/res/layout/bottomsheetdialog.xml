@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+android:paddingRight="8dp"
+    android:paddingTop="8dp"
+
+    android:paddingBottom="32dp"
+    android:id="@+id/botshtconstrn"
+ >
+
+    <LinearLayout
+        android:id="@+id/linerimage"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imagedetails"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/boll"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/namedetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linerimage" />
+
+  <TextView
+      android:id="@+id/details"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="4dp"
+      android:maxLines="4"
+      android:layout_marginLeft="24dp"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/namedetails"
+      tools:text="details : Lorem ipsum dolortrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Price : 7.5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+    <EditText
+        android:id="@+id/qty"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/qtybutn"
+        android:hint="QTY"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+  <Button
+      android:id="@+id/addtocart"
+      android:layout_width="wrap_content"
+      android:layout_height="55dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="24dp"
+      android:background="@drawable/solid"
+      android:padding="8dp"
+      android:text="add to cart"
+      android:textColor="@color/dark_main"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/details" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

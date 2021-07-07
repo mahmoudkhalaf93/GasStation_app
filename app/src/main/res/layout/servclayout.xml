@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgservc"
+    android:layout_width="match_parent"
+    android:background="@drawable/shapelayout"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linerimage"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="166dp"
+        android:background="@drawable/shape"
+        android:padding="8dp"
+        android:layout_width="166dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/servceimage"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/boll"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linerimage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/servprofile_servcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/dark_main"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="gas 95" />
+
+        <TextView
+            android:id="@+id/servprofile_servcdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:lines="6"
+            android:textColor="@color/dark_main"
+            android:textSize="11sp"
+
+            android:textStyle="bold"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+        <TextView
+            android:id="@+id/servprofile_servcprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/dark_main"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Price : 15.5 LE" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addToCard"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:background="@drawable/solid"
+        android:layout_marginBottom="2dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_add_shopping_cart_32q"
+        android:textColor="@color/dark_main"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/onclick_liner_servlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/addToCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <!--    <EditText-->
+<!--        android:id="@+id/serviceQyt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/solid"-->
+<!--        android:hint="QYT"-->
+<!--        android:inputType="number"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingRight="15dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:textColorHint="@color/dark_main"-->
+<!--        android:textSize="10sp"-->
+<!--        android:textColor="@color/dark_main"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"-->
+<!--        app:layout_constraintHorizontal_bias="0.91"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/linearLayout2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/linearLayout2"-->
+<!--        app:layout_constraintVertical_bias="0.100000024" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registswip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_main"
+
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c" />
+
+    <ImageView
+        android:id="@+id/dot_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_register"
+        app:layout_constraintEnd_toEndOf="@+id/logo_register"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="@+id/logo_register"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@drawable/dot" />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/user_register"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_get_buttom_from_gallry" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/email_register"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_name" />
+
+    <EditText
+        android:id="@+id/register_passowrd"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/password_dots"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/password_dots"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_passowrd" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/phone"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_confirm_password" />
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/solid"
+        android:onClick="reg"
+        android:text="Register"
+        android:textColor="@color/dark_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_phone" />
+
+    <Button
+        android:id="@+id/register_get_buttom_from_gallry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/solid"
+        android:drawableRight="@drawable/ic_menu_camera"
+        android:drawablePadding="16dp"
+        android:onClick="getimagefromgallary"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="profile Image"
+        android:textColor="@color/dark_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_profile_img" />
+
+    <ImageView
+        android:id="@+id/register_profile_img"
+        android:layout_width="156dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shapelayoutdark"
+        android:padding="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logfitt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

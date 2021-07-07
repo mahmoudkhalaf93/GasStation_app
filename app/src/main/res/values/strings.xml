@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gas Station</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_main_home">MainHomeActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map_gas_station">Map</string>
+
+</resources>

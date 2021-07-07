@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shapelayout"
+    android:padding="16dp"
+    >
+    <LinearLayout
+        android:id="@+id/linerimage"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:background="@drawable/shape"
+        android:padding="8dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shop_cart_image"
+            android:layout_height="85dp"
+            android:layout_width="85dp"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/boll"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shop_cart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change oil"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toEndOf="@+id/linerimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/shop_cart_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_delete_forever_64"
+        />
+
+    <TextView
+        android:id="@+id/shop_cart_service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:text="Price : 8 LE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shop_cart_tot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Total : 176.0 LE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linerimage" />
+
+    <EditText
+        android:id="@+id/shop_cart_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapbutoncart"
+        android:textColor="@color/dark_main"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:ems="3"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="5"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shop_cart_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

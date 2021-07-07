@@ -1,0 +1,80 @@
+<resources>
+
+    <style name="Widget.Theme.GasStation.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+
+    </style>
+
+    <style name="Widget.Theme.GasStation.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="MyDialogThemelight" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/light_main</item>
+        <item name="android:textColor">@color/dark_main</item>
+
+        <item name="android:textColorPrimary">@color/dark_main</item>
+    </style>
+    <style name="MyDialogThemeDark" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/dark_main</item>
+        <item name="android:textColor">@color/light_main</item>
+
+        <item name="android:textColorPrimary">@color/light_main</item>
+
+
+    </style>
+
+
+    <style name="ThemeOverlay.MyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- set background color -->
+        <item name="android:colorBackground">@color/dark_main</item>
+
+
+        <!-- set text color -->
+        <item name="android:textColor">@color/light_main</item>
+<item name="android:bottomLeftRadius">4dp</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15%</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+     Base application theme.
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dark_main</item>
+        ....
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+    </style>
+
+
+    //
+
+</resources>

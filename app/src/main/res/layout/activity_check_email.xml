@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dark_main"
+    android:layout_height="match_parent"
+    tools:context=".CheckEmailActivity">
+    <ImageView
+        android:id="@+id/logologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c" />
+
+    <ImageView
+        android:id="@+id/dotlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/logologin"
+        app:layout_constraintEnd_toEndOf="@+id/logologin"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="@+id/logologin"
+        app:layout_constraintTop_toTopOf="@+id/logologin"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/dot" />
+
+    <EditText
+        android:id="@+id/check_email_address"
+        android:layout_width="355dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/email_register"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logologin" />
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/solid"
+        android:text="check email"
+        android:onClick="CheckEmail"
+        android:textColor="#17212A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_email_address" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

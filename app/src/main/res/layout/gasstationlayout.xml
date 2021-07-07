@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shapelayout"
+    android:padding="8dp"
+   >
+  <LinearLayout
+      android:id="@+id/imgliner"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_height="166dp"
+      android:layout_width="166dp"
+      android:background="@drawable/shape"
+      android:padding="8dp"
+
+  >
+  <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/imggassation"
+      android:layout_height="150dp"
+      android:layout_width="150dp"
+      app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+      android:scaleType="centerCrop"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:src="@drawable/boll"
+      />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/imgliner"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/txtnamegasstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/dark_main"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_baseline_business_24"
+        android:drawablePadding="8dp"
+
+        tools:text="total" />
+
+    <TextView
+        android:id="@+id/txtareagasstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:textColor="@color/dark_main"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        tools:text="el mohanddsen" />
+
+    <TextView
+        android:id="@+id/txtphonegasstations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="phone"
+        android:textColor="@color/dark_main"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_baseline_phone_16"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        tools:text=" 015416" />
+
+
+  </LinearLayout>
+
+  <RatingBar
+      android:id="@+id/servprofile_servcratingbar"
+      android:layout_width="242dp"
+      android:layout_height="43dp"
+      android:numStars="5"
+      android:scaleX=".5"
+      android:scaleY=".5"
+      android:isIndicator="true"
+      app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+      app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+      app:layout_constraintHorizontal_bias="0.35"
+      app:layout_constraintStart_toStartOf="@+id/linearLayout"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
